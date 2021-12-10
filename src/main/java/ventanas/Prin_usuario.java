@@ -278,7 +278,7 @@ public class Prin_usuario extends javax.swing.JFrame {
         try {
 
             String Usuario = new String(txtPrinUsuario.getText());
-            String query = "UPDATE usuarios.usuarios set Nombre=?,Apellido=?,Telefono=?,Correo=?,Usuario=?,Contraseña=? WHERE Usuario='" + Usuario + "' ";
+            String query = "UPDATE usuarios13.usuarios set Nombre=?,Apellido=?,Telefono=?,Correo=?,Usuario=?,Contraseña=? WHERE Usuario='" + Usuario + "' ";
             PreparedStatement pst = cn.prepareStatement(query);
 
             pst.setString(1, txtPrinNombre.getText());
@@ -301,7 +301,7 @@ public class Prin_usuario extends javax.swing.JFrame {
     public void eliminar() {
         try {
             String Usuario = new String(txtPrinUsuario.getText());
-            String query = ("DELETE FROM usuarios.usuarios WHERE Usuario = '" + Usuario + "'");
+            String query = ("DELETE FROM usuarios13.usuarios WHERE Usuario = '" + Usuario + "'");
             PreparedStatement pst = cn.prepareStatement(query);
 
             pst.execute();
