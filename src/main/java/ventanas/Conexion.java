@@ -6,10 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-/** 
- *
- * @author darli
- */
+
 public class Conexion {
     
      Connection cn = null;
