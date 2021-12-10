@@ -16,7 +16,7 @@ public class Conexion {
 	
 	public static Connection conector() {
 		try {
-			Connection cn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/usuarios","root", "020176");
+			Connection cn = (Connection) DriverManager.getConnection("jdbc:mysql://db4free.net:3306/usuarios13","darlinski", "01091114");
 			return cn;
                         
 		} catch (SQLException e) {

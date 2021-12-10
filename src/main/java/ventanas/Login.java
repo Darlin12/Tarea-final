@@ -166,7 +166,7 @@ public class Login extends javax.swing.JFrame {
         //para ser utilizados en la consulta SQL.
         String usuario = jTextField_Usuario.getText();
         String contraseña = new String(jPassword_Contraseña.getPassword());
-        String query = "SELECT * FROM usuarios.usuarios Where Usuario= '" + usuario + "' and Contraseña= '" + contraseña + "' ";
+        String query = "SELECT * FROM usuarios13.usuarios Where Usuario= '" + usuario + "' and Contraseña= '" + contraseña + "' ";
 
         //Variable que se utilizará como contador para garantizar que el 
         //usuario no deje ningún campo vacío.

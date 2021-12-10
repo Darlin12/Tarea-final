@@ -238,7 +238,7 @@ public class Prin_usuario extends javax.swing.JFrame {
 
         DefaultTableModel modelo = new DefaultTableModel(null, titulos);
 
-        String query = "SELECT * FROM usuarios.usuarios";
+        String query = "SELECT * FROM usuarios13.usuarios";
 
         Statement pst = cn.createStatement();
         ResultSet rs = pst.executeQuery(query);

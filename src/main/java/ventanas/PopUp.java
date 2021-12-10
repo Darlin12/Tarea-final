@@ -185,7 +185,7 @@ public class PopUp extends javax.swing.JFrame {
         try {
 
             String codigo = new String(txt_Codigo.getText());
-            String query = "UPDATE usuarios.productos set NombreProducto=?,MarcaProducto=?,CategoriaProducto=?,PrecioProducto=?,StockProducto=?,Codigo=? WHERE NombreProducto='" + codigo + "' ";
+            String query = "UPDATE usuarios13.productos set NombreProducto=?,MarcaProducto=?,CategoriaProducto=?,PrecioProducto=?,StockProducto=?,Codigo=? WHERE NombreProducto='" + codigo + "' ";
             PreparedStatement pst = cn.prepareStatement(query);
 
             pst.setString(1, txt_NombreProducto.getText());
@@ -211,7 +211,7 @@ public class PopUp extends javax.swing.JFrame {
     public void eliminar() {
         try {
             String codigo = new String(txt_Codigo.getText());
-            String query = "DELETE FROM usuarios.productos  WHERE Codigo='" + codigo + "' ";
+            String query = "DELETE FROM usuarios13.productos  WHERE Codigo='" + codigo + "' ";
             PreparedStatement pst = cn.prepareStatement(query);
 
             pst.execute();
